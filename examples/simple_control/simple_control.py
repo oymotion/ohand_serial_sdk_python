@@ -1,10 +1,12 @@
 from serial.tools import list_ports
 import os
 import sys
+from ohand.constants import *
+from ohand.OHandSerialAPI import OHandSerialAPI
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
-from OHandSerialAPI import HAND_RESP_SUCCESS, HAND_PROTOCOL_UART, OHandSerialAPI
+# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+# from OHandSerialAPI import HAND_RESP_SUCCESS, HAND_PROTOCOL_UART, OHandSerialAPI
 
 
 PORT_UART = 0
@@ -14,9 +16,11 @@ PORT_CAN = 1
 PORT_TYPE = PORT_UART
 
 if PORT_TYPE == PORT_UART:
-    from interface.uart_interface import *
+    # from interface.uart_interface import *
+    from ohand.interface.uart import *
 else:
-    from interface.can_interface import *
+    from ohand.interface.can import *
+    # from interface.can_interface import *
 
 ADDRESS_MASTER = 0x01
 
