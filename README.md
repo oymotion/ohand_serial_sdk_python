@@ -8,7 +8,6 @@ Python APIs for OHand control.
 
 ```sh
 # Linux
-git clone https://github.com/openvmi/ohand_serial_sdk_python.git
 cd ohand_serial_sdk_python
 python3 -m pip install -e .
 ```
