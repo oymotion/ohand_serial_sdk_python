@@ -2,8 +2,19 @@
 
 Python APIs for OHand control.
 
-OHandSerialAPI.py: APIs.
+## Installation
 
-interface/: Communication interface.
+* Installing from source
 
-example/: Examples.
+```sh
+# Linux
+cd ohand_serial_sdk_python
+python3 -m pip install -e .
+```
+
+## Example
+
+```sh
+cd ohand_serial_sdk_python/examples/simple_control
+python3 simple_control.py
+```
