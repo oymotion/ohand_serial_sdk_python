@@ -31,13 +31,9 @@ make clean
 sudo make && sudo make install
 ```
 
-### 2.2 Install Requirements
-
-```BASH
-pip install -r requirements.txt
-```
-
 ## 3. Run
+
+### 3.1 Run simple_control
 
 * Open the `simple_control.py` file and modify the communication interface and device address as needed, for example:
 
@@ -50,7 +46,7 @@ ADDRESS_HAND = 2
 
 Windows:
 
-```python
+```BASH
 python simple_control.py
 ```
 
@@ -59,6 +55,31 @@ Linux:
 ``` BASH
 sudo chmod o+rw /dev/ttyUSB0
 python3 simple_control.py
+```
+
+* Press 'ctrl-c' to exit the program.
+
+### 3.2 Run dual_rohand_control
+
+* Open the `dual_rohand_control.py` file and modify the  device address as needed, for example:
+
+```python
+HAND_ID = [0x02, 0x03]
+```
+
+* Run the program:
+
+Windows:
+
+```BASH
+python dual_rohand_control.py
+```
+
+Linux:
+
+``` BASH
+sudo chmod o+rw /dev/ttyUSB0
+python3 dual_rohand_control.py
 ```
 
 * Press 'ctrl-c' to exit the program.

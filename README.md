@@ -2,7 +2,7 @@
 
 Python APIs for OHand control.
 
-## Installation
+## Installation on Linux
 
 * Installing from source
 
@@ -12,9 +12,12 @@ cd ohand_serial_sdk_python
 python3 -m pip install -e .
 ```
 
-## Example
+## Installation on Windows
+
+* Installing from source
 
 ```sh
-cd ohand_serial_sdk_python/examples/simple_control
-python3 simple_control.py
+# Windows
+cd ohand_serial_sdk_python
+python setup.py install
 ```

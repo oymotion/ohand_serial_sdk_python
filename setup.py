@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = "25.10.24"
+VERSION = "25.12.16"
 
 INSTALL_REQUIRES = [
     "pyserial==3.5",
