@@ -65,7 +65,6 @@ HAND_CMD_GET_FINGER_POS_ALL: Final = 0x0F  # Get current logical position of all
 HAND_CMD_GET_FINGER_ANGLE_ALL: Final = 0x10  # Get first joint angle of all fingers
 HAND_CMD_GET_FINGER_STOP_PARAMS: Final = 0x11  # Get finger finger stop parametres
 HAND_CMD_GET_FINGER_FORCE_PID: Final = 0x12  # Get finger force PID
-HAND_CMD_GET_MANUFACTURE_DATA: Final = 0x3E    # Get manufacture data
 
 # Auxiliary GET commands
 HAND_CMD_GET_SELF_TEST_LEVEL: Final = 0x20  # Get self-test level state
@@ -74,6 +73,8 @@ HAND_CMD_GET_BUTTON_PRESSED_CNT: Final = 0x22  # Get button press count
 HAND_CMD_GET_UID: Final = 0x23  # Get 96 bits UID
 HAND_CMD_GET_BATTERY_VOLTAGE: Final = 0x24  # Get battery voltage
 HAND_CMD_GET_USAGE_STAT: Final = 0x25  # Get usage stat
+HAND_CMD_GET_SPEED_CTRL_PARAMS = 0x3D  # Get speed control parameters
+HAND_CMD_GET_MANUFACTURE_DATA: Final = 0x3E    # Get manufacture data
 
 # Chief SET commands
 HAND_CMD_RESET: Final = 0x40  # Please don't modify
@@ -107,6 +108,13 @@ HAND_CMD_BEEP: Final = 0x62  # Beep for duration if beep switch is on
 HAND_CMD_SET_BUTTON_PRESSED_CNT: Final = 0x63  # Set button press count, for ROH calibration only
 HAND_CMD_START_INIT: Final = 0x64  # Start init in case of SELF_TEST_LEVEL=0
 HAND_CMD_SET_MANUFACTURE_DATA: Final = 0x65  # Set manufacture data
+HAND_CMD_SET_SPEED_CTRL_PARAMS = 0x66  # Set speed control parameters
 CMD_ERROR_MASK: Final = 1 << 7  # bit mask for command error
 
 MAX_PROTOCOL_DATA_SIZE: Final = 64
+
+# Data type
+UINT8_T = 0
+INT8_T = 1
+UINT16_T = 2
+INT16_T = 3
